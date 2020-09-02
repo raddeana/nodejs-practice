@@ -1,2 +1,2 @@
 # ndoejs-practice
-ndoejs practice libs
+ndoejs practice，analyse source codes
