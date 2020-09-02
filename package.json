@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-practice",
+  "version": "0.1.0",
+  "description": "nodejs practice, source code analysis",
+  "main": "N/A",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raddeana/nodejs-practice.git"
+  },
+  "author": "Philip",
+  "bugs": {
+    "url": "https://github.com/raddeana/nodejs-practice/issues"
+  },
+  "dependencies": {
+    "nodejs-websocket": "^1.7.2"
+  }
+}

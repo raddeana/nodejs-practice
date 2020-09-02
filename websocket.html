@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .kuang{ text-align: center;margin-top:200px; }
+        #mess{ text-align: center; }
+
+        .value {
+            width: 200px;
+            height:200px;
+            border:1px solid;
+            text-align: center;
+            line-height: 200px;
+            display: inline-block;
+            cursor: pointer;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="mess">正在连接...</div>
+    <div class="kuang">
+        <div class="value" id="value1">妙蛙种子</div>
+        <div class="value" id="value2">皮卡丘</div>
+        <div class="value" id="value3">超梦</div>
+    </div>
+
+    <script>
+        let mess = document.getElementById('mess');
+
+        if (window.WebSocket) {
+            let ws = new WebSocket('ws://localhost:3333');
+
+            document.querySelector('.kuang').onclick = function (e) {
+                var time = new Date();
+                ws.send(time + e.target.innerHTML);
+            };
+
+            ws.onopen = function(e){
+                mess.innerHTML = '连接成功';
+            };
+        }
+    </script>
+</body>
+</html>
