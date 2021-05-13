@@ -2,8 +2,8 @@
  * Http
  * @author Chenxiangyu
  */
-var http = require('http');
+const http = require('http');
 
 http.createServer(function (request, response) {
-    response.end('Hello World\n');
+    response.end("Hello World\n");
 }).listen(9297);

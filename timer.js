@@ -1,8 +1,8 @@
 // 执行顺序不确定
-setTimeout(function () {
-	console.log('setTimeout');
-}, 0)
-
 setImmediate(function () {
-	console.log('setImmediate');
-})
+	console.log('immediate');
+});
+
+setTimeout(function () {
+	console.log('timeout');
+});

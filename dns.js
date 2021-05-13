@@ -5,8 +5,8 @@
 
 const dns = require('dns');
 
-dns.lookup('www.baidu.com', function(err, address, family) {
+dns.lookup('www.baidu.com', function (err, address, family) {
 	console.log(err);
-    console.log(address);
-    console.log(family);
+  console.log(address);
+  console.log(family);
 });
